@@ -73,10 +73,7 @@ export default function HomeScreen({ navigation }) {
         />
         <FlatList
           data={pokemonList}
-          keyExtractor={(item) => {
-            const pokemonId = item.url.split('/').slice(-2, -1)[0]
-            return pokemonId;
-          }}
+          keyExtractor={(_, index) => index.toString()}
           renderItem={({ item }) => (
             <PokemonCard 
                 pokemon={item}
