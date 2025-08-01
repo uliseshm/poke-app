@@ -61,7 +61,7 @@ export default function PokemonDetailScreen({ route }) {
         </View>
         <View className='mt-6 w-full space-y-2'>
           <Text className='text-lg'>
-            <Text className='font-bold'>Altura:</Text> {pokemon.heigth / 10} m
+            <Text className='font-bold'>Altura:</Text> {pokemon.height / 10} m
           </Text>
           <Text className='text-lg'>
             <Text className='font-bold'>Peso:</Text> {pokemon.weight / 10} kg
