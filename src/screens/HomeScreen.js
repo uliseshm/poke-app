@@ -61,9 +61,9 @@ export default function HomeScreen({ navigation }) {
   }
   
   return (
-    <View className="flex-1 bg-gray-100" style={{ paddingTop: insets.top, paddingBottom: insets.bottom }}>
-      <View className="flex-1 px-4 pt-4">
-        <Text className="text-3xl font-bold text-center mb-6">Pokedex</Text>
+    <View className="flex-1" style={{ paddingTop: insets.top, paddingBottom: insets.bottom, backgroundColor: 'rgba(42, 117, 187, 0.9)', }}>
+      <View className="flex-1 px-4 pt-12">
+        <Text className="text-3xl font-bold text-center mb-6" style={styles.mainTitle}>Pokedex</Text>
         <TextInput 
           style={styles.searchInput}
           placeholder='Busca un Pokémon...'
@@ -108,4 +108,8 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
     elevation: 2, // Sombra para Android
   },
+  mainTitle: {
+    color: '#FFCB05',
+    fontSize: 45,
+  }
 });
